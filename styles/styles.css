@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif&display=swap&subset=cyrillic');
-
 @import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap&subset=cyrillic');
 
 body {
@@ -39,7 +38,8 @@ body:before {
     max-width: 360px;
     position: relative;
     background-color: #fff;
-    margin: 15px;
+    margin: 17px;
+
 }
 
 .room_card:hover .room-card-photo:before {
@@ -58,7 +58,7 @@ body:before {
 }
 
 .room-card-content {
-    padding: 0 15px;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,21 +68,29 @@ body:before {
     border-top: none;
 }
 
+.text {
+    margin-bottom: 18px;
+}
+
 .room-price span {
     color: #775b25;
-    font-size: 16pt;
-    font-weight: bold;
+    font-size: calc((20 / 672) * (26vw - 1440px) + 60px);
+    font-family: 'Noto Serif', serif;
+}
+
+.room-price {
+    font-size: calc((20 / 672) * (5vw - 1440px) + 60px);
+    margin-top: 10px;
     font-family: 'Noto Serif', serif;
 }
 
 .room_order_btn {
     background-color: #775b25;
-    padding: 10px;
+    padding: 15px 60px;
     color: #fff;
-    margin: 10px 0;
-    width: 55%;
-    border: 0;
-    font-size: 16px;
+    margin: 20px 0;
+    border: none;
+    font-size: 17px;
     font-family: 'PT Sans', sans-serif;
     text-decoration: none;
 }
@@ -102,21 +110,23 @@ body:before {
     text-transform: uppercase;
     font-family: 'Noto Serif', serif;
     z-index: 1;
-    font-size: calc((20/672)*(100vw - 1440px) + 60px);
+    font-size: calc((20 / 672) * (62vw - 1440px) + 60px);
+    margin-bottom: 50px;
 }
 
 .h2 {
     color: #70563d;
     display: flex;
     justify-content: center;
-    font-size: 16pt;
+    font-size: calc((20 / 672) * (26vw - 1440px) + 60px);
     font-family: 'Noto Serif', serif;
+    margin-bottom: 15px;
+    font-weight: normal;
 }
 
 .hr {
-    background-color: gray;
-    color: gray;
     width: 100%;
+    margin: 10px;
 }
 
 .img {
