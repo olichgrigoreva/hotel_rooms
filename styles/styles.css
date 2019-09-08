@@ -1,18 +1,12 @@
-@font-face {
-    font-family: NotoSerifRegular;
-    src: url("../fonts/NotoSerifRegular.ttf");
-}
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif&display=swap&subset=cyrillic');
 
-@font-face {
-    font-family: PTSansRegular;
-    src: url("../fonts/PTSansRegular.ttf");
-}
-
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap&subset=cyrillic');
 
 body {
+    display: flex;
+    justify-content: center;
     background: url("../img/background.png"), repeat;
-    margin: 20px;
-    font-family: PTSansRegular, sans-serif;
+    font-family: 'PT Sans', sans-serif;
 }
 
 body:before {
@@ -37,7 +31,6 @@ body:before {
     justify-content: center;
     margin: 0 auto;
     flex-wrap: wrap;
-
 }
 
 .room_card {
@@ -45,7 +38,7 @@ body:before {
     flex-direction: column;
     max-width: 360px;
     position: relative;
-    background-color: white;
+    background-color: #fff;
     margin: 15px;
 }
 
@@ -60,8 +53,8 @@ body:before {
 }
 
 .room_card:hover .room-card-content {
-    border: solid #ffffff;
-    border-top: thin white;
+    border: solid #fff;
+    border-top: none;
 }
 
 .room-card-content {
@@ -72,48 +65,52 @@ body:before {
     text-align: center;
     height: 100%;
     border: solid #d0bfa17d;
-    border-top: thin white;
+    border-top: none;
 }
 
 .room-price span {
     color: #775b25;
     font-size: 16pt;
     font-weight: bold;
-    font-family: NotoSerifRegular, sans-serif;
+    font-family: 'Noto Serif', serif;
 }
 
 .room_order_btn {
-    background-color: #92592d;
+    background-color: #775b25;
     padding: 10px;
-    color: white;
-    margin: 10px 0px;
+    color: #fff;
+    margin: 10px 0;
     width: 55%;
     border: 0;
     font-size: 16px;
+    font-family: 'PT Sans', sans-serif;
+    text-decoration: none;
+}
+
+.room_order_btn:hover {
+    background-color: #9e8555;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .h1 {
-    color: #775b25;
+    color: #70563d;
     width: 100%;
     display: flex;
     justify-content: center;
     text-transform: uppercase;
-    font-family: NotoSerifRegular, sans-serif;
+    font-family: 'Noto Serif', serif;
+    z-index: 1;
+    font-size: calc((20/672)*(100vw - 1440px) + 60px);
 }
 
-.room_order_btn:hover {
-    background-color: #cd8b58;
-    border-color: #cd8b58;
-    text-align: center;
-    cursor: pointer;
-}
-
-.h3 {
-    color: #775b25;
+.h2 {
+    color: #70563d;
     display: flex;
     justify-content: center;
     font-size: 16pt;
-    font-family: NotoSerifRegular, sans-serif;
+    font-family: 'Noto Serif', serif;
 }
 
 .hr {
@@ -132,7 +129,7 @@ body:before {
     filter: grayscale(100%);
 }
 
-@media (min-width: 320px) {
+@media (max-width: 320px) {
     h1 {
         font-size: 199%;
     }
@@ -144,7 +141,6 @@ body:before {
 
 @media (max-width: 767px) {
     .container {
-        /*display: flex;*/
         flex-direction: column;
         justify-content: flex-start;
     }
