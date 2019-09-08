@@ -1,151 +1,151 @@
 @font-face {
-  font-family: NotoSerifRegular;
-  src: url("../fonts/NotoSerifRegular.ttf");
+    font-family: NotoSerifRegular;
+    src: url("../fonts/NotoSerifRegular.ttf");
 }
 
 @font-face {
-  font-family: PTSansRegular;
-  src: url("../fonts/PTSansRegular.ttf");
+    font-family: PTSansRegular;
+    src: url("../fonts/PTSansRegular.ttf");
 }
 
 
-body{
-  background: url(../img/background.png), repeat;
-  margin: 20px;
-  font-family: PTSansRegular, sans-serif;
+body {
+    background: url("../img/background.png"), repeat;
+    margin: 20px;
+    font-family: PTSansRegular, sans-serif;
 }
 
 body:before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background: linear-gradient(to top, rgba(228,208,170,0.55), rgba(0,0,0,0));
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(228, 208, 170, 0.55), rgba(0, 0, 0, 0));
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .room_box {
-  display: flex;
-  width: auto;
-  justify-content: center;
-  margin: 0 auto;
-  flex-wrap: wrap;
+    display: flex;
+    width: auto;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
 
 }
 
 .room_card {
-  display: flex;
-  flex-direction: column;
-  max-width: 360px;
-  position: relative;
-  background-color: white;
-  margin: 15px;
+    display: flex;
+    flex-direction: column;
+    max-width: 360px;
+    position: relative;
+    background-color: white;
+    margin: 15px;
 }
 
 .room_card:hover .room-card-photo:before {
-  content: "";
-  background: url("../img/best_price.png") no-repeat;
-  margin: 5px;
-  padding: 5px;
-  position: absolute;
-  height: 50px;
-  width: 50px;
+    content: "";
+    background: url("../img/best_price.png") no-repeat;
+    margin: 5px;
+    padding: 5px;
+    position: absolute;
+    height: 50px;
+    width: 50px;
 }
 
 .room_card:hover .room-card-content {
-  border: solid #ffffff;
-  border-top: thin white;
+    border: solid #ffffff;
+    border-top: thin white;
 }
 
 .room-card-content {
-  padding: 0 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 100%;
-  border: solid #d0bfa17d;
-  border-top: thin white;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    border: solid #d0bfa17d;
+    border-top: thin white;
 }
 
 .room-price span {
-  color: #775b25;
-  font-size: 16pt;
-  font-weight: bold;
-  font-family: NotoSerifRegular, sans-serif;
+    color: #775b25;
+    font-size: 16pt;
+    font-weight: bold;
+    font-family: NotoSerifRegular, sans-serif;
 }
 
 .room_order_btn {
-  background-color: #92592d;
-  padding: 10px;
-  color: white;
-  margin: 10px 0px;
-  width: 55%;
-  border: 0;
-  font-size: 16px;
+    background-color: #92592d;
+    padding: 10px;
+    color: white;
+    margin: 10px 0px;
+    width: 55%;
+    border: 0;
+    font-size: 16px;
 }
 
-.h1{
-  color: #775b25;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  text-transform: uppercase;
-  font-family: NotoSerifRegular, sans-serif;
+.h1 {
+    color: #775b25;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: NotoSerifRegular, sans-serif;
 }
 
 .room_order_btn:hover {
-  background-color: #cd8b58;
-  border-color: #cd8b58;
-  text-align: center;
-  cursor: pointer;
+    background-color: #cd8b58;
+    border-color: #cd8b58;
+    text-align: center;
+    cursor: pointer;
 }
 
-.h3{
-  color: #775b25;
-  display: flex;
-  justify-content: center;
-  font-size: 16pt;
-  font-family: NotoSerifRegular, sans-serif;
+.h3 {
+    color: #775b25;
+    display: flex;
+    justify-content: center;
+    font-size: 16pt;
+    font-family: NotoSerifRegular, sans-serif;
 }
 
-.hr{
-  background-color: gray;
-  color: gray;
-  width: 100%;
+.hr {
+    background-color: gray;
+    color: gray;
+    width: 100%;
 }
 
-.img{
-  max-width: 100%;
-  height: auto;
-  display: block;
+.img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .grayscale {
-  filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
-@media (min-width: 320px){
-  h1 {
-    font-size: 199%;
-  }
+@media (min-width: 320px) {
+    h1 {
+        font-size: 199%;
+    }
 
-  .room_order_btn {
-    font-size: 14px;
-  }
+    .room_order_btn {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 767px) {
-  .container {
-    /*display: flex;*/
-    flex-direction: column;
-    justify-content: flex-start;
-  }
+    .container {
+        /*display: flex;*/
+        flex-direction: column;
+        justify-content: flex-start;
+    }
 }
