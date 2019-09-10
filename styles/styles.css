@@ -24,7 +24,7 @@ body:before {
     justify-content: center;
 }
 
-.room_box {
+.box {
     display: flex;
     width: auto;
     justify-content: center;
@@ -32,7 +32,7 @@ body:before {
     flex-wrap: wrap;
 }
 
-.room_card {
+.card {
     display: flex;
     flex-direction: column;
     max-width: 360px;
@@ -42,7 +42,7 @@ body:before {
 
 }
 
-.room_card:hover .room-card-photo:before {
+.card:hover .card__image:before {
     content: "";
     background: url("../img/best_price.png") no-repeat;
     margin: 5px;
@@ -52,12 +52,12 @@ body:before {
     width: 50px;
 }
 
-.room_card:hover .room-card-content {
+.card:hover .card__content {
     border: solid #fff;
     border-top: none;
 }
 
-.room-card-content {
+.card__content {
     padding: 0 20px;
     display: flex;
     flex-direction: column;
@@ -68,23 +68,25 @@ body:before {
     border-top: none;
 }
 
-.text {
+.card__text {
     margin-bottom: 18px;
+    flex: 1;
 }
 
-.room-price span {
+.order__price span {
     color: #775b25;
-    font-size: calc((20 / 672) * (26vw - 1440px) + 60px);
+    font-size: 26px;
     font-family: 'Noto Serif', serif;
 }
 
-.room-price {
-    font-size: calc((20 / 672) * (5vw - 1440px) + 60px);
+.order__price {
+    font-size: 19px;
     margin-top: 10px;
     font-family: 'Noto Serif', serif;
 }
 
-.room_order_btn {
+.button {
+    width: 110px;
     background-color: #775b25;
     padding: 15px 60px;
     color: #fff;
@@ -95,11 +97,18 @@ body:before {
     text-decoration: none;
 }
 
-.room_order_btn:hover {
+.order {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.button:hover {
     background-color: #9e8555;
     text-align: center;
     cursor: pointer;
-    text-decoration: none;
 }
 
 .h1 {
@@ -110,48 +119,40 @@ body:before {
     text-transform: uppercase;
     font-family: 'Noto Serif', serif;
     z-index: 1;
-    font-size: calc((20 / 672) * (62vw - 1440px) + 60px);
+    font-size: 42px;
     margin-bottom: 50px;
 }
 
-.h2 {
+.card__title {
     color: #70563d;
     display: flex;
     justify-content: center;
-    font-size: calc((20 / 672) * (26vw - 1440px) + 60px);
+    font-size: 28px;
     font-family: 'Noto Serif', serif;
     margin-bottom: 15px;
     font-weight: normal;
 }
 
+.picture .img {
+    width: 100%
+}
+
 .hr {
     width: 100%;
-    margin: 10px;
+    margin: 10px 0;
 }
 
-.img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
+/*.card.-grayscale {*/
 .grayscale {
-    filter: grayscale(100%);
+    filter: grayscale(1);
 }
 
-@media (max-width: 320px) {
-    h1 {
-        font-size: 199%;
+@media (max-width: 425px) {
+    .h1 {
+        font-size: 32px;
     }
 
-    .room_order_btn {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 767px) {
-    .container {
-        flex-direction: column;
-        justify-content: flex-start;
+    .card__title {
+        font-size: 23px;
     }
 }
