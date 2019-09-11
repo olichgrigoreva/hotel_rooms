@@ -147,7 +147,7 @@ body:before {
     margin: 10px 0;
 }
 
-.grayscale {
+.-grayscale {
     filter: grayscale(1);
 }
 
