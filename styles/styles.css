@@ -6,6 +6,7 @@ body {
     justify-content: center;
     background: url("../img/background.png"), repeat;
     font-family: 'PT Sans', sans-serif;
+
 }
 
 body:before {
@@ -58,7 +59,7 @@ body:before {
 }
 
 .card__content {
-    padding: 0 20px;
+    padding: 0 20px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,8 +70,11 @@ body:before {
 }
 
 .card__text {
+    display: flex;
+    align-items: flex-start;
     margin-bottom: 18px;
     flex: 1;
+    line-height: 22px;
 }
 
 .order__price span {
@@ -90,7 +94,7 @@ body:before {
     background-color: #775b25;
     padding: 15px 60px;
     color: #fff;
-    margin: 20px 0;
+    margin: 20px 0 30px;
     border: none;
     font-size: 17px;
     font-family: 'PT Sans', sans-serif;
@@ -131,6 +135,7 @@ body:before {
     font-family: 'Noto Serif', serif;
     margin-bottom: 15px;
     font-weight: normal;
+    flex-grow: 1;
 }
 
 .picture .img {
@@ -142,9 +147,12 @@ body:before {
     margin: 10px 0;
 }
 
-/*.card.-grayscale {*/
 .grayscale {
     filter: grayscale(1);
+}
+
+.-hide {
+    display: none;
 }
 
 @media (max-width: 425px) {
@@ -154,5 +162,9 @@ body:before {
 
     .card__title {
         font-size: 23px;
+    }
+
+    .card {
+        margin: 17px 10px;
     }
 }

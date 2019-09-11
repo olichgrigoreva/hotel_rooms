@@ -5,13 +5,20 @@ document.addEventListener("DOMContentLoaded", function () {
         let card = document.querySelectorAll(".card");
         for (let i = 0; i < card.length; i++) {
             let btn = card[i].querySelector(".button");
+
+            card[i].addEventListener('click', function () {
+                if (card[i].classList.contains("grayscale")) {
+                    card[i].classList.remove("grayscale");
+                }
+            });
             btn.addEventListener('click', function (event) {
                 event.preventDefault();
-                card[i].addEventListener('mouseleave', function _listener() {
-                    card[i].classList.toggle("grayscale");
-                    btn.textContent = btn.textContent === 'Подробнее' ? 'Забронировать' : 'Подробнее';
-                    card[i].removeEventListener("mouseleave", _listener);
-                });
+                if (!card[i].classList.contains("grayscale")) {
+                    card[i].addEventListener('mouseleave', function _listener() {
+                        card[i].classList.add("grayscale");
+                        card[i].removeEventListener("mouseleave", _listener);
+                    });
+                }
             });
         }
     }
