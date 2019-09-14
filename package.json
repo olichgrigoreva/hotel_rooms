@@ -1,0 +1,26 @@
+{
+  "name": "hotel_rooms",
+  "version": "1.0.0",
+  "description": "test task for web dev",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olichgrigoreva/hotel_rooms.git"
+  },
+  "author": "Olya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olichgrigoreva/hotel_rooms/issues"
+  },
+  "homepage": "https://github.com/olichgrigoreva/hotel_rooms#readme"
+}
