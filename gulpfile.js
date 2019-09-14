@@ -11,6 +11,6 @@ gulp.task('sass', function () { // Создаем таск "sass"
                 cascade: true //каскадность кода на выходе
             })
         )
-        .pipe(minifyCSS())
+        //.pipe(minifyCSS())
         .pipe(gulp.dest('app/styles')) // Выгружаем результата в папку app/styles
 });
